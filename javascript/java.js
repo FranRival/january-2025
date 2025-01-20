@@ -4,6 +4,17 @@ const inputCoupon = document.querySelector('#cupon')
 const pResult = document.querySelector('#resultado')
 bton.addEventListener('click', sacarPorcentaje)
 
+
+
+
+cuponArray.push({
+    name: 'cuponx2',
+    descuento: 25,
+    limit: 500
+})
+
+
+
 function sacarPorcentaje(){
     const precio = Number(inoutPrice.value)
     const cupon = inputCoupon.value
@@ -13,13 +24,31 @@ function sacarPorcentaje(){
         return
     }
 
-    let descuento
+    let descuento1
 
     function encontrarElemento(cuponElemento){
         return cuponElemento.name == cupon
     }
 
     const cuponEnArray = cuponArray.find(encontrarElemento)
+
+    if(cuponEnArray){
+        descuento1 = cuponEnArray.descuento
+    }else{
+        pResult.innerText('Cupon no valido')
+    }
+
+    console.log({
+        cupon,
+        descuento1,
+        cuponEnArray,
+        cuponArray
+    });
+
+
+    const resultadoReal = precio*(100 - descuento1)/100
+    pResult.innerText = 'El precio con descuento es: $' + resultadoReal
+    
 
 }
 
