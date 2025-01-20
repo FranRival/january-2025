@@ -26,7 +26,6 @@ cuponArray.push({
 
 
 function sacarPorcentaje(){
-    alert('s')
     const precio = Number(inoutPrice.value)
     const cupon = inputCoupon.value
 
@@ -57,7 +56,7 @@ function sacarPorcentaje(){
     });
 
 
-    const resultadoReal = precio*(100 - descuento1)/100
+    const resultadoReal = precio*(100 - discuento)/100
     pResult.innerText = 'El precio con descuento es: $' + resultadoReal
     
 
