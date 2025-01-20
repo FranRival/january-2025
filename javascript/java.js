@@ -30,7 +30,8 @@ function sacarPorcentaje(){
     const cupon = inputCoupon.value
 
     if(!precio || !cupon){
-        pResult.innerText('Llena el formulario')
+       // pResult.innerText('Llena el formulario')
+       pResult.innerText('dddcd')
         return
     }
 
@@ -65,6 +66,3 @@ function sacarPorcentaje(){
 
 
 
-
-
-///el problema es que colocando el descuento no me deja hacer la resta.
