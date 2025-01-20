@@ -54,3 +54,6 @@ function sacarPorcentaje(){
 
 
 const cuponArray = []
+
+
+///el problema es que colocando el descuento no me deja hacer la resta.
