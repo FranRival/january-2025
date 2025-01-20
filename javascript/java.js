@@ -6,16 +6,27 @@ bton.addEventListener('click', sacarPorcentaje)
 
 
 
+const cuponArray = []
+
 
 cuponArray.push({
     name: 'cuponx2',
-    descuento: 25,
+    descuento1: 25,
+    limit: 500
+})
+
+cuponArray.push({
+    name: 'cuponx3',
+    descuento1: 30,
     limit: 500
 })
 
 
+///el problema dice que es una variable que esta en indefinida
+
 
 function sacarPorcentaje(){
+    alert('s')
     const precio = Number(inoutPrice.value)
     const cupon = inputCoupon.value
 
@@ -24,7 +35,7 @@ function sacarPorcentaje(){
         return
     }
 
-    let descuento1
+    let discuento
 
     function encontrarElemento(cuponElemento){
         return cuponElemento.name == cupon
@@ -33,14 +44,14 @@ function sacarPorcentaje(){
     const cuponEnArray = cuponArray.find(encontrarElemento)
 
     if(cuponEnArray){
-        descuento1 = cuponEnArray.descuento
+        discuento = cuponEnArray.descuento
     }else{
         pResult.innerText('Cupon no valido')
     }
 
     console.log({
         cupon,
-        descuento1,
+        discuento,
         cuponEnArray,
         cuponArray
     });
@@ -53,7 +64,8 @@ function sacarPorcentaje(){
 }
 
 
-const cuponArray = []
+
+
 
 
 ///el problema es que colocando el descuento no me deja hacer la resta.
