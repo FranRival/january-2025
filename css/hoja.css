@@ -2,6 +2,32 @@
     margin-left: 10px;
 }
 
+
+.itempadre{
+     white-space: -moz-pre-wrap
+}
+
+
 .item1{
-    margin-left: 100px;
+    margin-left: 0px;
+}
+
+.item2{
+    margin-left: 0px;
+}
+
+.item3{
+    margin-left: 0px;
+}
+
+.item4{
+    margin-left: 0px;
+}
+
+.item5{
+    margin-left: 0px;
+}
+
+.item6{
+    margin-left: 0px;
 }
