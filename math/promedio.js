@@ -1,3 +1,10 @@
+const inoutPrice = document.getElementById('#impar-verificacion')
+
+const pResult = document.getElementById('#')
+
+
+
+
 const ClaseMath = {} //es un array.
 
 
@@ -6,6 +13,19 @@ const ClaseMath = {} //es un array.
 ClaseMath.esPar = function esPar(lista){
     return !(lista.length%2)
 }
+
+//2 funciones. 
+ClaseMath.esPar3 = function esPar(Par){
+    //return !(lista.length%2)
+    Par = Number(inoutPrice.value)
+    return Par/2
+}
+
+
+//mi bojetivo es ligar this modofoko shit to los botones
+
+
+
 
 ClaseMath.esImpar = function esImpar(lista){
     return lista.length%2
