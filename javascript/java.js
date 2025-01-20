@@ -11,13 +11,13 @@ const cuponArray = []
 
 cuponArray.push({
     name: 'cuponx2',
-    descuento1: 25,
+    discuento: 25,
     limit: 500
 })
 
 cuponArray.push({
     name: 'cuponx3',
-    descuento1: 30,
+    discuento: 30,
     limit: 500
 })
 
@@ -43,7 +43,7 @@ function sacarPorcentaje(){
     const cuponEnArray = cuponArray.find(encontrarElemento)
 
     if(cuponEnArray){
-        discuento = cuponEnArray.descuento
+        discuento = cuponEnArray.discuento
     }else{
         pResult.innerText('Cupon no valido')
     }
